@@ -6,7 +6,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import setup.TestBase;
 
-import static org.hamcrest.MatcherAssert.assertThat;
+import static org.assertj.core.api.Assertions.assertThat;
 
 public class PageTests extends TestBase {
 
@@ -15,6 +15,7 @@ public class PageTests extends TestBase {
     @Test
     void websiteTitleTest() {
         String actualTitle = driver.getTitle();
-        assertThat(actualTitle, Boolean.parseBoolean(System.getProperty("title")));
+        String expectedTitle = System.getProperty("title");
+        assertThat(actualTitle).isEqualTo(expectedTitle);
     }
 }
