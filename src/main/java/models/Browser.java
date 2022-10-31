@@ -9,7 +9,6 @@ import lombok.NoArgsConstructor;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
-
 public class Browser {
     Map<String, Object> browserProperties = new LinkedHashMap<>();
 

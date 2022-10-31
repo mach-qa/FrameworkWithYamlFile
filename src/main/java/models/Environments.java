@@ -25,4 +25,3 @@ public class Environments {
         return this.environments.values().stream().toList();
     }
 }
-

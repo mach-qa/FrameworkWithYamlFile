@@ -33,7 +33,7 @@ public class PropertiesFactory {
         String activeEnvironment = yamlReader.getConfig().getActiveEnvironment();
         listOfEnvironments = yamlReader.getConfig().getEnvironment().getEnvironments();
         for (EnvironmentFields environmentFields : listOfEnvironments) {
-            String loadedEnvironment = String.valueOf(yamlReader.getConfig().getEnvironment().toString());
+            Object loadedEnvironment = environmentFields.getProperties().get("environmentName");
             if (Objects.equals(activeEnvironment, loadedEnvironment)) {
                 Map<String, Object> envProperties = environmentFields.getProperties();
                 for (Map.Entry entry : envProperties.entrySet()) {

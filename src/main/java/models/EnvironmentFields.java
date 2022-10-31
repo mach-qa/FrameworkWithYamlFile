@@ -8,8 +8,6 @@ import lombok.NoArgsConstructor;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
-@Data
-@NoArgsConstructor
 public class EnvironmentFields {
 
     Map<String, Object> properties = new LinkedHashMap<>();

@@ -14,6 +14,7 @@ public class PageTests extends TestBase {
 
     @Test
     void websiteTitleTest() {
+        driver.get(System.getProperty("appUrl"));
         String actualTitle = driver.getTitle();
         String expectedTitle = System.getProperty("title");
         assertThat(actualTitle).isEqualTo(expectedTitle);

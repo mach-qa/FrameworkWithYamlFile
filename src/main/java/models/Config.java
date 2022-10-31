@@ -33,4 +33,5 @@ public class Config {
     public Environments environment;
     public Browser browser;
 
-    }
+
+}

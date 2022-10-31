@@ -1,4 +1,4 @@
-activeEnvironment: int
+activeEnvironment: test
 browser:
   browserName: chrome
   attachScreenshot: true
@@ -6,8 +6,10 @@ browser:
   timeout: 60
 environment:
   int:
+    environmentName: int
     appUrl: https://www.filmweb.pl
     title: Filmweb - filmy takie jak Ty!
   test:
+    environmentName: test
     appUrl: https://www.selenium.dev
     title: Selenium
